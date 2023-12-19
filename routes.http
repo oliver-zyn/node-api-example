@@ -1,0 +1,31 @@
+POST http://localhost:3333/videos
+Content-Type: application/json
+
+{
+  "title": "video aaaaa",
+  "description": "adasdsasasd",
+  "duration": 123
+}
+
+###
+
+GET http://localhost:3333/videos
+
+###
+
+GET http://localhost:3333/videos?search=node
+
+###
+
+PUT http://localhost:3333/videos/7826c133-5bf2-4465-a20a-a0ccaa3af32a
+Content-Type: application/json
+
+{
+  "title": "video asdsaddsaasd",
+  "description": "adasdsasasd",
+  "duration": 123
+}
+
+###
+
+DELETE http://localhost:3333/videos/7826c133-5bf2-4465-a20a-a0ccaa3af32a
